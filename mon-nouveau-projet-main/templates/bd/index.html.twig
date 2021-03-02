@@ -9,12 +9,9 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Applications/MAMP/htdocs/SymfonyProject/mon-nouveau-projet-main/src/Controller/BdController.php'|file_link(0) }}">src/Controller/BdController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Applications/MAMP/htdocs/SymfonyProject/mon-nouveau-projet-main/templates/bd/index.html.twig'|file_link(0) }}">templates/bd/index.html.twig</a></code></li>
-    </ul>
+    <h1>Hello La liste des auteurs</h1>
+    {% for auteur in auteurs %}
+    <p>{{ auteur.auteur}}</p>
+    {% endfor %}
 </div>
 {% endblock %}

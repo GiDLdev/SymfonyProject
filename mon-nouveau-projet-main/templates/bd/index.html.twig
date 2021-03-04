@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello BdController!{% endblock %}
+{% block title %}La liste des auteur{% endblock %}
 
 {% block body %}
 <style>
@@ -9,9 +9,9 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello La liste des auteurs</h1>
+    <h1>La liste des auteurs</h1>
     {% for auteur in auteurs %}
-    <p>{{ auteur.auteur}}</p>
+    <p><a href="{{path('bd_show', {id :auteur.id}) }}"{{ auteur.auteur}}</a></p>
     {% endfor %}
 </div>
 {% endblock %}

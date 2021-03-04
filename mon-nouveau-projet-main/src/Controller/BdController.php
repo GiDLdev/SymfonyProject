@@ -32,4 +32,15 @@ class BdController extends AbstractController
             'age' =>18
         ]);
     }
+
+    /**
+    * @Route("/bd/livre/{id}", name="bd_show")
+    */
+    public function show($id, AuteurRepository $repo)
+    {
+        $auteur = $repo->find($id);
+        return $this->render('bd/show.html.twig', [
+            'auteur'=> $auteur 
+        ]);
+    }
 }

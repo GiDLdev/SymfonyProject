@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CapController extends AbstractController
 {
     /**
-     * @Route("/cap", name="cap")
+     * @Route("/", name="accueil")
      */
     public function index(): Response
     {
@@ -19,7 +19,7 @@ class CapController extends AbstractController
     }
 
     /**
-     * @Route("/", name="galerie")
+     * @Route("/galerie", name="galerie")
      */
     public function galerie(): Response
     {

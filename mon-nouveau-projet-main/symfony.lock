@@ -11,9 +11,9 @@
             "ref": "a93061567140e386f107be75340ac2aee3f86cbf"
         },
         "files": [
-            "config/packages/api_platform.yaml",
-            "config/routes/api_platform.yaml",
-            "src/Entity/.gitignore"
+            "./config/packages/api_platform.yaml",
+            "./config/routes/api_platform.yaml",
+            "./src/Entity/.gitignore"
         ]
     },
     "composer/package-versions-deprecated": {
@@ -134,7 +134,7 @@
             "ref": "6bea22e6c564fba3a1391615cada1437d0bde39c"
         },
         "files": [
-            "config/packages/nelmio_cors.yaml"
+            "./config/packages/nelmio_cors.yaml"
         ]
     },
     "nikic/php-parser": {

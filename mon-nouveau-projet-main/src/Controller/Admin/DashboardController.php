@@ -27,18 +27,19 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle('Mon Nouveau Projet Main');
+            ->setTitle('Mon Nouveau Projet');
     }
 
     public function configureMenuItems(): iterable
     {
-        yield MenuItem::linkToDashboard('Tableau de bord', 'fa fa-home');
+        yield MenuItem::linktoDashboard('Accueil', 'fa fa-home');
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
         yield MenuItem::section('Mes BD');
             yield MenuItem::linkToCrud('Produits', 'fas fa-tags', Produit::class);
+            yield MenuItem::linkToCrud('Auteurs', 'fas fa-tags', Auteur::class);
+            yield MenuItem::linkToCrud('Genres', 'fas fa-tags', Genre::class);
             yield MenuItem::linkToCrud('Editeurs', 'fas fa-tags', Editeur::class);
             yield MenuItem::linkToCrud('Fournisseurs', 'fas fa-tags', Fournisseur::class);
-            yield MenuItem::linkToCrud('Genres', 'fas fa-tags', Genre::class);
-            yield MenuItem::linkToCrud('Auteurs', 'fas fa-tags', Auteur::class);
+
     }
 }

@@ -56,4 +56,13 @@ class Fournisseur
 
         return $this;
     }
+    /*
+    * Generates the magic method
+    * 
+    */
+    public function _toString() {
+        // to show the name of the Fournisseur in the select
+        return $this->fournisseur;
+        // to show the id of the Fournisseur in the select
+    }
 }

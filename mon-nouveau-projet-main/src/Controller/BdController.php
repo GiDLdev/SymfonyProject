@@ -36,9 +36,9 @@ class BdController extends AbstractController
     /**
      * @Route("/bd/livre/{id}", name="bd_show")
      */
-    public function show($id, ProduitRepository $repo) {
+    public function show($id, ProduitRepository $repo){
 
-        $produits = $repo->findAll();
+        $produits = $repo->findby(array("auteur" => $id));
         return $this->render('bd/show.html.twig', [
             'produits'=> $produits
         ]);

@@ -80,4 +80,13 @@ class Auteur
 
         return $this;
     }
+    /*
+    * Generates the magic method
+    * 
+    */
+    public function _toString() {
+        // to show the name of the Auteur in the select
+        return $this->auteur;
+        // to show the id of the Auteur in the select
+    }
 }

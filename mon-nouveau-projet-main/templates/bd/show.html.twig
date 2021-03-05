@@ -8,9 +8,9 @@
 <article>
     <h2>{{ produit.titre }}</h2>
     <div>
-        <h2>{{ produit.heros }} - {{ produit.refbd}}</h2>
+        <h2>{{ produit.heros }} - {{ produit.auteur }}</h2>
         <div class="content">
-            <img src="{{ asset('images/') }}{{ produit.refbd}}{{'.jpg'}}" alt="">
+            <img src="{{ asset('images/') }}{{ produit.refbd }}{{'.jpg'}}" alt="{{ produit.refbd }}">
                 <p>{{ produit.resume }}</p>
                 <hr>
             </img>

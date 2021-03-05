@@ -42,7 +42,7 @@ class Genre
     * Generates the magic method
     * 
     */
-    public function _toString() {
+    public function __toString() {
         // to show the name of the Genre in the select
         return $this->genre;
         // to show the id of the Genre in the select

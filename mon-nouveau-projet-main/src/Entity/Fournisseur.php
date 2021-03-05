@@ -60,7 +60,7 @@ class Fournisseur
     * Generates the magic method
     * 
     */
-    public function _toString() {
+    public function __toString() {
         // to show the name of the Fournisseur in the select
         return $this->fournisseur;
         // to show the id of the Fournisseur in the select

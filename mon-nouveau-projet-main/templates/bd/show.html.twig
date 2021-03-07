@@ -10,8 +10,13 @@
     <div>
         <h2>{{ produit.heros }} - {{ produit.auteur }}</h2>
         <div class="content">
-            <img src="{{ asset('images/') }}{{ produit.refbd }}{{'.jpg'}}" alt="{{ produit.refbd }}">
+            {% if produit.refbd in couvertures %}
+            <img src="{{ asset('images/') }}{{ produit.refbd}}{{'.jpg'}}" alt="{{ produit.refbd}}" class="thumbnail">
+            {% else %}
+            <img src="{{ asset('images/defaut.jpg') }}" alt="aucune couverture" class="thumbnail">
+            {% endif %}
                 <p>{{ produit.resume }}</p>
+                {{ produit.refbd }}
                 <hr>
             </img>
         </div>

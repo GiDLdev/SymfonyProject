@@ -42,7 +42,7 @@ jQuery(function($){
 
 		})
 
-		$("#menu-nav-mobile a").on('click', function(e){
+		$("#menu-nav-mobile a#mobile-nav").on('click', function(e){
 			$("#navigation-mobile").toggleClass('close');
 			$("#mobile-nav").removeClass('open');
 			setTimeout(function(){

@@ -9,10 +9,41 @@
     max-width: 800px; 
     width: 95%; 
     font: 18px/1.5 sans-serif; 
+    color: blue;
 }
+
+.example-wrapper a{ 
+    color: blue;
+}
+
+.example-wrapper a:hover{ 
+    color: blue;
+    text-decoration-line: underline;
+    -moz-text-decoration-line: underline;
+    text-decoration-color: blue;
+    -moz-text-decoration-color: blue;
+
+}
+
 
 
 .example-wrapper code { 
     background: #F5F5F5; 
     padding: 2px 6px; 
+}
+
+.active a.page-link{
+    color: yellow;
+    background-color: indigo;
+    border-color: black;
+}
+
+.active a.page-link:hover{
+    color: teal;
+    
+}
+
+.badge-primary{
+    color: yellow;
+    background-color: blue;
 }
